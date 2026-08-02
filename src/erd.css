@@ -1,0 +1,201 @@
+
+
+:root {
+    --vjs-erd-primary: #3b82f6;
+    --vjs-erd-primary-hover: #2563eb;
+    --vjs-erd-bg: #f8fafc;
+    --vjs-erd-border: #e2e8f0;
+    --vjs-erd-text: #1e293b;
+    --vjs-erd-text-muted: #64748b;
+    --vjs-erd-transparent-blue: rgba(59, 130, 246, 0.1);
+
+    --vjs-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --vjs-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.vjs-erd {
+    width:100%;
+    display:flex;
+    height:80vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--vjs-erd-text);
+}
+
+.vjs-erd-canvas {
+    flex-grow:1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.vjs-erd-palette {
+    flex-basis:100px;
+}
+
+.vjs-controls {
+    z-index:100;
+    left:2rem;
+    top:2rem;
+}
+
+.vjs-shape-library-palette .vjs-shape-library-palette-shape {
+    width:4rem;
+
+    .vjs-shape-library-palette-label {
+        overflow: visible;
+    }
+}
+
+/* ------------------ INSPECTOR ------------------------------------------------- */
+
+.vjs-erd-inspector {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-height: calc(100% - 100px);
+    background-color: white;
+    border: 1px solid var(--vjs-erd-border);
+    border-radius: 12px;
+    box-shadow: var(--vjs-shadow-lg);
+    padding: 1.5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.vjs-erd-inspector.vjs-inspector-inactive {
+    display: none;
+}
+
+.vjs-erd-inspector label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--vjs-erd-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 1rem 0 0.5rem 0;
+    display: block;
+}
+
+.vjs-erd-inspector label:first-child {
+    margin-top: 0;
+}
+
+.vjs-erd-inspector .vjs-inspector-type {
+    font-size: 12px;
+    color: var(--vjs-erd-text-muted);
+    background: var(--vjs-erd-bg);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    display: inline-block;
+    border: 1px solid var(--vjs-erd-border);
+}
+
+.vjs-erd-inspector input,
+.vjs-erd-inspector textarea,
+.vjs-erd-inspector select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--vjs-erd-border);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--vjs-erd-text);
+    background-color: white;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vjs-erd-inspector input:focus,
+.vjs-erd-inspector textarea:focus {
+    outline: none;
+    border-color: var(--vjs-erd-primary);
+    box-shadow: 0 0 0 3px var(--vjs-erd-transparent-blue);
+}
+
+.vjs-erd-inspector textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Color Picker professional styling */
+.vjs-erd-inspector .vjs-color-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.vjs-erd-inspector .vjs-color-picker input {
+    height:2.5rem;
+}
+
+.vjs-erd-inspector .vjs-color-picker-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.1s, border-color 0.2s;
+}
+
+.vjs-erd-inspector .vjs-color-picker-item:hover {
+    transform: scale(1.1);
+}
+
+.vjs-erd-inspector .vjs-color-picker-item-selected {
+    border-color: var(--vjs-erd-primary);
+    transform: scale(1.1);
+}
+
+.vjs-erd-inspector .vjs-edge-type-picker {
+    display:flex;
+    flex-direction:column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.vjs-erd-inspector .vjs-edge-type-picker > div {
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--vjs-erd-border);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vjs-erd-inspector .vjs-edge-type-picker > div:hover {
+    background-color: var(--vjs-erd-bg);
+}
+
+.vjs-erd-inspector .vjs-edge-type-picker > div > div {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    right: 10px;
+    position:absolute;
+}
+
+.vjs-erd-inspector .vjs-edge-type-picker > svg {
+    z-index:1;
+}
+
+.vjs-erd-inspector .vjs-edge-type-picker-selected {
+    border-color: var(--vjs-erd-primary) !important;
+    background-color: var(--vjs-erd-transparent-blue) !important;
+}
+
+.vjs-erd-inspector select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em;
+    padding-right: 2.5rem;
+}

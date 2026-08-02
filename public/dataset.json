@@ -1,0 +1,514 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "x": 60,
+      "y": -140,
+      "type": "entity",
+      "label": "Supplier",
+      "width": 120,
+      "height": 60,
+      "z": 1,
+      "fill": "#567567",
+      "color": "#ffffff"
+    },
+    {
+      "id": "2",
+      "x": 60,
+      "y": -300,
+      "type": "attribute",
+      "label": "Name",
+      "width": 120,
+      "height": 60,
+      "z": 54,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "3",
+      "x": 60,
+      "y": -460,
+      "type": "attribute",
+      "label": "First_Name",
+      "width": 120,
+      "height": 60,
+      "z": 55,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "4",
+      "x": 300,
+      "y": -300,
+      "type": "attribute",
+      "label": "Last_Name",
+      "width": 100,
+      "height": 60,
+      "z": 51,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "5",
+      "x": 60,
+      "y": 20,
+      "type": "relationship",
+      "label": "Contract Date",
+      "width": 120,
+      "height": 80,
+      "z": 56,
+      "fill": "#e9e2d0",
+      "color": "#444444"
+    },
+    {
+      "id": "6",
+      "x": 60,
+      "y": 200,
+      "type": "entity",
+      "label": "Contractors",
+      "width": 120,
+      "height": 80,
+      "z": 39,
+      "fill": "#567567",
+      "color": "#ffffff"
+    },
+    {
+      "id": "7",
+      "x": -100,
+      "y": -140,
+      "type": "attribute",
+      "label": "Address",
+      "width": 80,
+      "height": 60,
+      "z": 29,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "8",
+      "x": -100,
+      "y": -280,
+      "type": "attribute",
+      "label": "State",
+      "width": 80,
+      "height": 60,
+      "z": 32,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "9",
+      "x": -260,
+      "y": -140,
+      "type": "attribute",
+      "label": "Street",
+      "width": 80,
+      "height": 60,
+      "z": 33,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "10",
+      "x": -100,
+      "y": 0,
+      "type": "attribute",
+      "label": "City",
+      "width": 80,
+      "height": 60,
+      "z": 30,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "11",
+      "x": 260,
+      "y": -140,
+      "type": "attribute",
+      "label": "Supplier No.",
+      "width": 80,
+      "height": 60,
+      "z": 11,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "12",
+      "x": 280,
+      "y": 200,
+      "type": "relationship",
+      "label": "Supplied",
+      "width": 140,
+      "height": 80,
+      "z": 38,
+      "fill": "#e9e2d0",
+      "color": "#444444"
+    },
+    {
+      "id": "13",
+      "x": 60,
+      "y": 360,
+      "type": "relationship",
+      "label": "Supply Price",
+      "width": 120,
+      "height": 80,
+      "z": 57,
+      "fill": "#e9e2d0",
+      "color": "#444444"
+    },
+    {
+      "id": "14",
+      "x": 60,
+      "y": 520,
+      "type": "entity",
+      "label": "Items",
+      "width": 120,
+      "height": 60,
+      "z": 14,
+      "fill": "#567567",
+      "color": "#ffffff"
+    },
+    {
+      "id": "15",
+      "x": -160,
+      "y": 520,
+      "type": "attribute",
+      "label": "Item Desc.",
+      "width": 120,
+      "height": 60,
+      "z": 15,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "16",
+      "x": -160,
+      "y": 380,
+      "type": "attribute",
+      "label": "Qty",
+      "width": 120,
+      "height": 60,
+      "z": 16,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "17",
+      "x": -360,
+      "y": 520,
+      "type": "attribute",
+      "label": "Item Size",
+      "width": 120,
+      "height": 60,
+      "z": 17,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "18",
+      "x": -160,
+      "y": 660,
+      "type": "attribute",
+      "label": "Rate",
+      "width": 120,
+      "height": 60,
+      "z": 18,
+      "fill": "#b2bebe",
+      "color": "#64748b"
+    },
+    {
+      "id": "19",
+      "x": 60,
+      "y": 660,
+      "type": "attribute",
+      "label": "Item No.",
+      "width": 120,
+      "height": 60,
+      "z": 19,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "20",
+      "x": 260,
+      "y": 420,
+      "type": "relationship",
+      "label": "Order Qty",
+      "width": 120,
+      "height": 80,
+      "z": 58,
+      "fill": "#e9e2d0",
+      "color": "#444444"
+    },
+    {
+      "id": "21",
+      "x": 500,
+      "y": 480,
+      "type": "entity",
+      "label": "Orders",
+      "width": 120,
+      "height": 80,
+      "z": 60,
+      "fill": "#567567",
+      "color": "#ffffff"
+    },
+    {
+      "id": "22",
+      "x": 640,
+      "y": 200,
+      "type": "relationship",
+      "label": "Ordered By",
+      "width": 120,
+      "height": 80,
+      "z": 59,
+      "fill": "#e9e2d0",
+      "color": "#444444"
+    },
+    {
+      "id": "23",
+      "x": 640,
+      "y": 60,
+      "type": "entity",
+      "label": "Projects",
+      "width": 120,
+      "height": 60,
+      "z": 44,
+      "fill": "#567567",
+      "color": "#ffffff"
+    },
+    {
+      "id": "24",
+      "x": 640,
+      "y": -100,
+      "type": "attribute",
+      "label": "Project Date",
+      "width": 120,
+      "height": 60,
+      "z": 46,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "25",
+      "x": 440,
+      "y": 60,
+      "type": "attribute",
+      "label": "Product No.",
+      "width": 120,
+      "height": 60,
+      "z": 45,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "26",
+      "x": 500,
+      "y": 680,
+      "type": "attribute",
+      "label": "Order No.",
+      "width": 120,
+      "height": 60,
+      "z": 42,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "27",
+      "x": 360,
+      "y": 680,
+      "type": "attribute",
+      "label": "Order Recvd.",
+      "width": 120,
+      "height": 60,
+      "z": 27,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    },
+    {
+      "id": "28",
+      "x": 640,
+      "y": 680,
+      "type": "attribute",
+      "label": "Order Dispatch",
+      "width": 120,
+      "height": 60,
+      "z": 28,
+      "fill": "#8ea2a2",
+      "color": "#1e293b"
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "5",
+      "data": {
+        "type": "source_1"
+      }
+    },
+    {
+      "source": "2",
+      "target": "1",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "2",
+      "target": "3"
+    },
+    {
+      "source": "2",
+      "target": "4"
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "data": {
+        "type": "target_N"
+      }
+    },
+    {
+      "source": "6",
+      "target": "12",
+      "data": {
+        "type": "source_1"
+      }
+    },
+    {
+      "source": "6",
+      "target": "13",
+      "data": {
+        "type": "source_N"
+      }
+    },
+    {
+      "source": "7",
+      "target": "1",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "8",
+      "target": "7"
+    },
+    {
+      "source": "9",
+      "target": "7"
+    },
+    {
+      "source": "10",
+      "target": "7"
+    },
+    {
+      "source": "11",
+      "target": "1",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "12",
+      "target": "21",
+      "data": {
+        "type": "target_N"
+      }
+    },
+    {
+      "source": "13",
+      "target": "14",
+      "data": {
+        "type": "target_N"
+      }
+    },
+    {
+      "source": "14",
+      "target": "20",
+      "data": {
+        "type": "source_N"
+      }
+    },
+    {
+      "source": "15",
+      "target": "14",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "16",
+      "target": "15"
+    },
+    {
+      "source": "17",
+      "target": "15"
+    },
+    {
+      "source": "18",
+      "target": "15"
+    },
+    {
+      "source": "19",
+      "target": "14",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "20",
+      "target": "21",
+      "data": {
+        "type": "target_N"
+      }
+    },
+    {
+      "source": "21",
+      "target": "22",
+      "data": {
+        "type": "source_N"
+      }
+    },
+    {
+      "source": "23",
+      "target": "22",
+      "data": {
+        "type": "source_1"
+      }
+    },
+    {
+      "source": "24",
+      "target": "23",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "25",
+      "target": "23",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "26",
+      "target": "21",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "27",
+      "target": "21",
+      "data": {
+        "type": "targetArrow"
+      }
+    },
+    {
+      "source": "28",
+      "target": "21",
+      "data": {
+        "type": "targetArrow"
+      }
+    }
+  ]
+}
